@@ -76,10 +76,6 @@ export default function Layout({ children, user, onLogout }) {
             <LogOut className="w-4 h-4" />
             Disconnect Wallet
           </button>
-
-          <div className="mt-6 text-[10px] text-white/40 text-center">
-            Qubic Hackathon 2025
-          </div>
         </div>
       </aside>
 
