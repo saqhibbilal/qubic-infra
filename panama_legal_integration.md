@@ -1,200 +1,200 @@
-# AEGIS REGISTRY + PANAMÁ: Integración de Procesos Legales Reales
+# AEGIS REGISTRY + PANAMA: Integration of Real Legal Processes
 
-## Documento Estratégico: Diferenciador Competitivo
+## Strategic Document: Competitive Differentiator
 
-**Versión:** 1.0  
-**Fecha:** Noviembre 2025  
-**Objetivo:** Transformar Aegis Registry de una simulación blockchain en un sistema híbrido que integra procesos legales reales de Panamá con validación descentralizada en Qubic.
-
----
-
-## 1. EL PROBLEMA: Blockchain Sin Validación Legal Es Solo Datos
-
-Tu observación es **absolutamente correcta y crítica**. Un registro en blockchain sin validación legal real es equivalente a escribir en un libro de notas compartido. Es inmutable, pero **no es legalmente vinculante**.
-
-En Panamá, el Registro Público es la única autoridad que puede conferir validez legal a un registro de propiedad. Simplemente registrar algo en blockchain no lo hace legal; lo hace solo auditable.
-
-**Aegis Registry debe ser un puente entre dos mundos:**
-- **Mundo Legal:** Panamá, BVI, Bahamas (autoridades registrales, notarios, abogados)
-- **Mundo Digital:** Qubic blockchain (inmutabilidad, transparencia, velocidad)
+**Version:** 1.0  
+**Date:** November 2025  
+**Objective:** Transform Aegis Registry from a blockchain simulation into a hybrid system that integrates real legal processes in Panama with decentralized validation on Qubic.
 
 ---
 
-## 2. EL PROCESO LEGAL ACTUAL EN PANAMÁ
+## 1. THE PROBLEM: Blockchain Without Legal Validation Is Just Data
 
-### 2.1 Flujo Tradicional de Registro de Propiedad
+Your observation is **absolutely correct and critical**. A blockchain record without real legal validation is equivalent to writing in a shared notebook. It is immutable, but **it is not legally binding**.
+
+In Panama, the Public Registry is the only authority that can confer legal validity on a property record. Simply registering something on blockchain does not make it legal; it only makes it auditable.
+
+**Aegis Registry must be a bridge between two worlds:**
+- **Legal World:** Panama, BVI, Bahamas (registry authorities, notaries, lawyers)
+- **Digital World:** Qubic blockchain (immutability, transparency, speed)
+
+---
+
+## 2. THE CURRENT LEGAL PROCESS IN PANAMA
+
+### 2.1 Traditional Property Registration Flow
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                  PROCESO TRADICIONAL (7-14 DÍAS)                │
+│                  TRADITIONAL PROCESS (7-14 DAYS)                │
 └─────────────────────────────────────────────────────────────────┘
 
-1. PREPARACIÓN (2-3 días)
-   ├─ Obtener contrato de compra/venta
-   ├─ Solicitar planos al ingeniero
-   ├─ Obtener certificado de catastro
-   └─ Recopilar documentos de identidad
+1. PREPARATION (2-3 days)
+   ├─ Obtain purchase/sale contract
+   ├─ Request plans from engineer
+   ├─ Obtain cadastre certificate
+   └─ Collect identity documents
 
-2. NOTARIZACIÓN (1-2 días)
-   ├─ Contactar notario público
-   ├─ Presentar documentos
-   ├─ Notario verifica autenticidad
-   └─ Notario genera escritura pública
+2. NOTARIZATION (1-2 days)
+   ├─ Contact public notary
+   ├─ Submit documents
+   ├─ Notary verifies authenticity
+   └─ Notary produces public deed
 
-3. REGISTRO PÚBLICO (3-5 días)
-   ├─ Presentar documentos en Registro Público
-   ├─ Funcionario revisa documentos
-   ├─ Pago de aranceles registrales
-   └─ Emisión de título de propiedad
+3. PUBLIC REGISTRY (3-5 days)
+   ├─ Submit documents at Public Registry
+   ├─ Official reviews documents
+   ├─ Pay registry fees
+   └─ Issue title of ownership
 
-4. ENTREGA (1 día)
-   └─ Recepción del título legal
+4. DELIVERY (1 day)
+   └─ Receive legal title
 
-TIEMPO TOTAL: 7-14 días
-COSTO: $500-$2,000 (honorarios notariales + aranceles)
-PUNTOS DÉBILES:
-  • Documentos pueden ser falsificados
-  • Proceso centralizado en una institución
-  • Sin transparencia en el proceso
-  • Duplicación de esfuerzos entre jurisdicciones
+TOTAL TIME: 7-14 days
+COST: $500-$2,000 (notarial fees + registry fees)
+WEAKNESSES:
+  • Documents can be forged
+  • Process centralized in one institution
+  • No transparency in the process
+  • Duplication of effort across jurisdictions
 ```
 
-### 2.2 Documentos Requeridos en Panamá
+### 2.2 Documents Required in Panama
 
-| Documento | Emisor | Validez | Propósito |
+| Document | Issuer | Validity | Purpose |
 | :--- | :--- | :--- | :--- |
-| **Contrato de Compra-Venta** | Abogado/Partes | Original + copias | Prueba de adquisición |
-| **Cédula/Pasaporte** | DNIC/Migraciones | Vigente | Identificación del propietario |
-| **Planos de la Propiedad** | Ingeniero Idóneo | Firmados y sellados | Descripción física del bien |
-| **Certificado de Catastro** | Dirección de Catastro | Actualizado | Derechos sobre la propiedad |
-| **Paz y Salvo** | Municipalidad/ANAM | Actualizado | Confirmación de no deudas |
-| **Escritura Pública** | Notario Público | Original | Documento legal vinculante |
-| **Solicitud de Inscripción** | Propietario/Abogado | Notariada | Solicitud formal al Registro |
+| **Purchase-Sale Contract** | Lawyer/Parties | Original + copies | Proof of acquisition |
+| **ID/Passport** | DNIC/Immigration | Current | Owner identification |
+| **Property Plans** | Licensed Engineer | Signed and sealed | Physical description of asset |
+| **Cadastre Certificate** | Cadastre Directorate | Up to date | Rights over the property |
+| **Clearance Certificate** | Municipality/ANAM | Up to date | Confirmation of no debts |
+| **Public Deed** | Public Notary | Original | Legally binding document |
+| **Registration Application** | Owner/Lawyer | Notarized | Formal request to Registry |
 
-### 2.3 Actores Clave en Panamá
+### 2.3 Key Actors in Panama
 
-1. **Propietario:** Persona que desea registrar la propiedad
-2. **Abogado/Notario:** Valida documentos y genera escritura pública
-3. **Ingeniero Idóneo:** Certifica planos y descripción física
-4. **Dirección de Catastro:** Emite certificado de derechos
-5. **Municipalidad:** Emite paz y salvo de impuestos
-6. **Registro Público:** Autoridad final que confiere validez legal
-7. **Dirección General de Ingresos (DGI):** Gestiona aspectos fiscales
+1. **Owner:** Person wishing to register the property
+2. **Lawyer/Notary:** Validates documents and produces public deed
+3. **Licensed Engineer:** Certifies plans and physical description
+4. **Cadastre Directorate:** Issues rights certificate
+5. **Municipality:** Issues tax clearance
+6. **Public Registry:** Final authority that confers legal validity
+7. **Directorate General of Revenue (DGI):** Handles tax matters
 
 ---
 
-## 3. LA SOLUCIÓN: AEGIS REGISTRY COMO PUENTE LEGAL-DIGITAL
+## 3. THE SOLUTION: AEGIS REGISTRY AS A LEGAL-DIGITAL BRIDGE
 
-### 3.1 Nuevo Flujo Integrado: Aegis Registry + Panamá
+### 3.1 New Integrated Flow: Aegis Registry + Panama
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│         PROCESO INTEGRADO AEGIS REGISTRY (4-7 DÍAS)             │
+│         INTEGRATED AEGIS REGISTRY PROCESS (4-7 DAYS)             │
 └─────────────────────────────────────────────────────────────────┘
 
-FASE 1: REGISTRO DIGITAL EN AEGIS (1 hora)
+PHASE 1: DIGITAL REGISTRATION IN AEGIS (1 hour)
 ┌──────────────────────────────────────────────────────────────┐
-│ 1.1 Propietario accede a Aegis Registry dApp                │
-│ 1.2 Completa formulario con:                                │
-│     • Descripción de la propiedad                           │
-│     • Ubicación en Panamá (provincia, distrito, corregimiento)
-│     • Tipo de bien (residencial, comercial, terreno, etc.)  │
-│ 1.3 Carga documentos digitales:                             │
-│     • Foto de cédula                                        │
-│     • Contrato de compra-venta (PDF)                        │
-│     • Planos (imagen/PDF)                                   │
-│ 1.4 Sistema genera:                                         │
-│     • QR único del activo (como ya lo haces)               │
-│     • Hash criptográfico de todos los documentos            │
-│     • ID de registro temporal en blockchain                 │
-│ 1.5 Estado: "PENDIENTE DE VALIDACIÓN LEGAL"               │
+│ 1.1 Owner accesses Aegis Registry dApp                      │
+│ 1.2 Completes form with:                                     │
+│     • Property description                                   │
+│     • Location in Panama (province, district, corregimiento)  │
+│     • Asset type (residential, commercial, land, etc.)        │
+│ 1.3 Uploads digital documents:                               │
+│     • ID photo                                                │
+│     • Purchase-sale contract (PDF)                            │
+│     • Plans (image/PDF)                                       │
+│ 1.4 System generates:                                         │
+│     • Unique asset QR (as you already do)                     │
+│     • Cryptographic hash of all documents                    │
+│     • Temporary blockchain registration ID                    │
+│ 1.5 Status: "PENDING LEGAL VALIDATION"                        │
 └──────────────────────────────────────────────────────────────┘
 
-FASE 2: VALIDACIÓN LEGAL (2-3 días)
+PHASE 2: LEGAL VALIDATION (2-3 days)
 ┌──────────────────────────────────────────────────────────────┐
-│ 2.1 Notario/Abogado Verificador accede a Aegis              │
-│ 2.2 Revisa documentos cargados:                             │
-│     • Verifica autenticidad de cédula                       │
-│     • Valida contrato de compra-venta                       │
-│     • Confirma planos son de ingeniero idóneo               │
-│ 2.3 Genera Escritura Pública Digital:                       │
-│     • Documento legal vinculante                            │
-│     • Firmado digitalmente por notario                      │
-│     • Timestamp legal de creación                           │
-│ 2.4 Carga escritura en Aegis Registry                       │
-│ 2.5 Aprueba el registro en blockchain                       │
-│ 2.6 Estado: "VALIDADO POR NOTARIO"                         │
-│ 2.7 Notificación automática al propietario                  │
+│ 2.1 Notary/Lawyer Verifier accesses Aegis                     │
+│ 2.2 Reviews uploaded documents:                               │
+│     • Verifies ID authenticity                                │
+│     • Validates purchase-sale contract                        │
+│     • Confirms plans are from licensed engineer                │
+│ 2.3 Produces Digital Public Deed:                             │
+│     • Legally binding document                                │
+│     • Digitally signed by notary                              │
+│     • Legal creation timestamp                                │
+│ 2.4 Uploads deed to Aegis Registry                            │
+│ 2.5 Approves registration on blockchain                       │
+│ 2.6 Status: "VALIDATED BY NOTARY"                             │
+│ 2.7 Automatic notification to owner                          │
 └──────────────────────────────────────────────────────────────┘
 
-FASE 3: VALIDACIÓN DE AUTORIDADES (1-2 días)
+PHASE 3: AUTHORITY VALIDATION (1-2 days)
 ┌──────────────────────────────────────────────────────────────┐
-│ 3.1 Catastro (Dirección de Catastro):                       │
-│     • Verifica derechos sobre la propiedad                  │
-│     • Emite certificado digital                            │
-│     • Carga en Aegis Registry                              │
-│ 3.2 Municipalidad:                                          │
-│     • Verifica Paz y Salvo                                 │
-│     • Emite certificado digital                            │
-│     • Carga en Aegis Registry                              │
-│ 3.3 DGI (Dirección General de Ingresos):                   │
-│     • Verifica situación fiscal                            │
-│     • Emite certificado digital                            │
-│     • Carga en Aegis Registry                              │
-│ 3.4 Estado: "VALIDADO POR AUTORIDADES"                     │
-│ 3.5 Notificación automática al propietario                  │
+│ 3.1 Cadastre (Cadastre Directorate):                          │
+│     • Verifies rights over the property                        │
+│     • Issues digital certificate                              │
+│     • Uploads to Aegis Registry                               │
+│ 3.2 Municipality:                                            │
+│     • Verifies Clearance Certificate                          │
+│     • Issues digital certificate                              │
+│     • Uploads to Aegis Registry                               │
+│ 3.3 DGI (Directorate General of Revenue):                    │
+│     • Verifies tax status                                     │
+│     • Issues digital certificate                              │
+│     • Uploads to Aegis Registry                               │
+│ 3.4 Status: "VALIDATED BY AUTHORITIES"                        │
+│ 3.5 Automatic notification to owner                          │
 └──────────────────────────────────────────────────────────────┘
 
-FASE 4: INSCRIPCIÓN EN REGISTRO PÚBLICO (1 día)
+PHASE 4: INSCRIPTION IN PUBLIC REGISTRY (1 day)
 ┌──────────────────────────────────────────────────────────────┐
-│ 4.1 Funcionario del Registro Público accede a Aegis          │
-│ 4.2 Revisa todos los documentos validados:                  │
-│     • Escritura pública notariada                           │
-│     • Certificado de catastro                              │
-│     • Paz y salvo municipal                                │
-│     • Certificado fiscal                                   │
-│ 4.3 Verifica que hash criptográfico coincide               │
-│     (garantiza que no hubo manipulación)                    │
-│ 4.4 Emite Título de Propiedad Digital:                     │
-│     • Documento legal oficial                              │
-│     • Firmado digitalmente por Registro Público             │
-│     • Timestamp de inscripción oficial                      │
-│ 4.5 Carga título en Aegis Registry                         │
-│ 4.6 Aprueba inscripción en blockchain                       │
-│ 4.7 Estado: "INSCRITO EN REGISTRO PÚBLICO"                 │
-│ 4.8 Notificación final al propietario                       │
+│ 4.1 Public Registry official accesses Aegis                   │
+│ 4.2 Reviews all validated documents:                          │
+│     • Notarized public deed                                   │
+│     • Cadastre certificate                                    │
+│     • Municipal clearance                                    │
+│     • Tax certificate                                        │
+│ 4.3 Verifies that cryptographic hash matches                  │
+│     (guarantees no tampering)                                 │
+│ 4.4 Issues Digital Title of Ownership:                        │
+│     • Official legal document                                 │
+│     • Digitally signed by Public Registry                     │
+│     • Official inscription timestamp                          │
+│ 4.5 Uploads title to Aegis Registry                           │
+│ 4.6 Approves inscription on blockchain                        │
+│ 4.7 Status: "INSCRIBED IN PUBLIC REGISTRY"                    │
+│ 4.8 Final notification to owner                              │
 └──────────────────────────────────────────────────────────────┘
 
-TIEMPO TOTAL: 4-7 días (vs. 7-14 días en proceso tradicional)
-COSTO: $300-$1,500 (reducción del 25-40%)
-MEJORAS:
-  ✓ Documentos validados criptográficamente
-  ✓ Transparencia total del proceso
-  ✓ Imposible falsificar documentos
-  ✓ Todas las autoridades tienen acceso simultáneo
-  ✓ Historial inmutable de cada paso
-  ✓ Más rápido y más barato
+TOTAL TIME: 4-7 days (vs. 7-14 days in traditional process)
+COST: $300-$1,500 (25-40% reduction)
+IMPROVEMENTS:
+  ✓ Documents cryptographically validated
+  ✓ Full process transparency
+  ✓ Documents cannot be forged
+  ✓ All authorities have simultaneous access
+  ✓ Immutable record of each step
+  ✓ Faster and cheaper
 ```
 
 ---
 
-## 4. ARQUITECTURA TÉCNICA: ROLES Y PERMISOS EN AEGIS
+## 4. TECHNICAL ARCHITECTURE: ROLES AND PERMISSIONS IN AEGIS
 
-### 4.1 Nuevos Roles de Usuario
+### 4.1 New User Roles
 
 ```javascript
-// Roles en Aegis Registry
+// Roles in Aegis Registry
 enum UserRole {
-  OWNER = 1,              // Propietario del activo
-  NOTARY = 2,             // Notario público validador
-  CADASTRE_OFFICER = 3,   // Oficial de catastro
-  MUNICIPALITY = 4,       // Representante municipal
-  TAX_AUTHORITY = 5,      // Autoridad fiscal (DGI)
-  REGISTRY_OFFICER = 6,   // Oficial del Registro Público
-  INVESTOR = 7            // Inversor (futuro)
+  OWNER = 1,              // Asset owner
+  NOTARY = 2,             // Validating public notary
+  CADASTRE_OFFICER = 3,   // Cadastre officer
+  MUNICIPALITY = 4,       // Municipal representative
+  TAX_AUTHORITY = 5,      // Tax authority (DGI)
+  REGISTRY_OFFICER = 6,   // Public Registry officer
+  INVESTOR = 7            // Investor (future)
 }
 
-// Estados del registro
+// Registration statuses
 enum RegistrationStatus {
   PENDING_LEGAL_VALIDATION = 0,
   NOTARY_VALIDATED = 1,
@@ -207,48 +207,48 @@ enum RegistrationStatus {
 }
 ```
 
-### 4.2 Flujo de Datos en el Contrato Inteligente
+### 4.2 Smart Contract Data Flow
 
 ```cpp
-// Estructura mejorada del Asset
+// Enhanced Asset structure
 struct Asset {
     bytes32 assetId;
     address owner;
     string jurisdiction;
     string description;
     
-    // --- NUEVOS CAMPOS LEGALES ---
-    bytes32 legalDocumentHash;           // Hash de escritura pública
-    address notaryValidator;              // Notario que validó
+    // --- NEW LEGAL FIELDS ---
+    bytes32 legalDocumentHash;           // Hash of public deed
+    address notaryValidator;             // Notary who validated
     uint256 notaryValidationTimestamp;
     
-    bytes32 cadastreDocumentHash;         // Hash de certificado catastral
-    address cadastreValidator;             // Oficial de catastro
+    bytes32 cadastreDocumentHash;        // Hash of cadastre certificate
+    address cadastreValidator;            // Cadastre officer
     uint256 cadastreValidationTimestamp;
     
-    bytes32 municipalityDocumentHash;     // Hash de paz y salvo
-    address municipalityValidator;         // Municipalidad
+    bytes32 municipalityDocumentHash;    // Hash of clearance certificate
+    address municipalityValidator;       // Municipality
     uint256 municipalityValidationTimestamp;
     
-    bytes32 taxDocumentHash;              // Hash de certificado fiscal
-    address taxValidator;                  // DGI
+    bytes32 taxDocumentHash;             // Hash of tax certificate
+    address taxValidator;                 // DGI
     uint256 taxValidationTimestamp;
     
-    bytes32 registryDocumentHash;         // Hash de título oficial
-    address registryOfficer;               // Registro Público
+    bytes32 registryDocumentHash;        // Hash of official title
+    address registryOfficer;              // Public Registry
     uint256 registryInscriptionTimestamp;
     
-    uint8 status;                          // Estado actual
-    bool isLegallyValid;                   // ¿Es legalmente válido?
+    uint8 status;                         // Current status
+    bool isLegallyValid;                  // Is it legally valid?
     bool isTokenized;
 };
 
-// Nuevas funciones del contrato
+// New contract functions
 function submitForLegalValidation(
     bytes32 assetId,
     bytes32 legalDocumentHash
 ) public onlyOwner(assetId) {
-    // Propietario envía documentos para validación
+    // Owner submits documents for validation
     assets[assetId].status = PENDING_LEGAL_VALIDATION;
     emit SubmittedForLegalValidation(assetId, msg.sender);
 }
@@ -257,7 +257,7 @@ function validateByNotary(
     bytes32 assetId,
     bytes32 notaryDocumentHash
 ) public onlyNotary {
-    // Notario valida y firma digitalmente
+    // Notary validates and signs digitally
     assets[assetId].notaryValidator = msg.sender;
     assets[assetId].legalDocumentHash = notaryDocumentHash;
     assets[assetId].notaryValidationTimestamp = block.timestamp;
@@ -269,7 +269,7 @@ function validateByCadastre(
     bytes32 assetId,
     bytes32 cadastreDocumentHash
 ) public onlyCadastre {
-    // Catastro valida derechos
+    // Cadastre validates rights
     assets[assetId].cadastreValidator = msg.sender;
     assets[assetId].cadastreDocumentHash = cadastreDocumentHash;
     assets[assetId].cadastreValidationTimestamp = block.timestamp;
@@ -281,7 +281,7 @@ function inscribeInRegistry(
     bytes32 assetId,
     bytes32 registryDocumentHash
 ) public onlyRegistryOfficer {
-    // Registro Público inscribe oficialmente
+    // Public Registry inscribes officially
     require(
         assets[assetId].status == TAX_AUTHORITY_VALIDATED,
         "All validations must be complete"
@@ -291,14 +291,14 @@ function inscribeInRegistry(
     assets[assetId].registryDocumentHash = registryDocumentHash;
     assets[assetId].registryInscriptionTimestamp = block.timestamp;
     assets[assetId].status = REGISTRY_INSCRIBED;
-    assets[assetId].isLegallyValid = true;  // ¡AHORA ES LEGALMENTE VÁLIDO!
+    assets[assetId].isLegallyValid = true;  // NOW LEGALLY VALID!
     
     emit RegistryInscribed(assetId, msg.sender);
 }
 
 function getFullValidationChain(bytes32 assetId) 
     public view returns (ValidationChain memory) {
-    // Retorna toda la cadena de validación
+    // Returns the full validation chain
     return ValidationChain({
         owner: assets[assetId].owner,
         notary: assets[assetId].notaryValidator,
@@ -320,290 +320,290 @@ function getFullValidationChain(bytes32 assetId)
 
 ---
 
-## 5. INTERFAZ DE USUARIO: NUEVAS VISTAS
+## 5. USER INTERFACE: NEW VIEWS
 
-### 5.1 Vista de Propietario: Flujo de Registro Mejorado
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│ AEGIS REGISTRY - REGISTRO DE PROPIEDAD                      │
-└─────────────────────────────────────────────────────────────┘
-
-PASO 1: INFORMACIÓN BÁSICA
-├─ Descripción de la propiedad
-├─ Ubicación (Provincia, Distrito, Corregimiento)
-├─ Tipo de bien (Dropdown)
-└─ Valor estimado
-
-PASO 2: DOCUMENTOS DIGITALES
-├─ Cédula del propietario (foto)
-├─ Contrato de compra-venta (PDF)
-├─ Planos de la propiedad (imagen)
-└─ [GENERAR QR] ← Ya lo tienes implementado
-
-PASO 3: RESUMEN Y ENVÍO
-├─ Resumen de información
-├─ Hash criptográfico de documentos
-├─ [ENVIAR PARA VALIDACIÓN LEGAL]
-└─ Estado: "PENDIENTE DE VALIDACIÓN LEGAL"
-
-PASO 4: SEGUIMIENTO EN TIEMPO REAL
-├─ Notario: [VALIDANDO...] ✓ VALIDADO
-├─ Catastro: [PENDIENTE...]
-├─ Municipalidad: [PENDIENTE...]
-├─ DGI: [PENDIENTE...]
-└─ Registro Público: [PENDIENTE...]
-
-RESULTADO FINAL
-├─ ✓ INSCRITO EN REGISTRO PÚBLICO
-├─ Título de Propiedad Digital (descargable)
-├─ Certificado de Validación (descargable)
-└─ [TOKENIZAR PROPIEDAD] (para fase de inversión fraccionada)
-```
-
-### 5.2 Vista de Notario: Panel de Validación
+### 5.1 Owner View: Improved Registration Flow
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ AEGIS REGISTRY - PANEL DE NOTARIO                           │
+│ AEGIS REGISTRY - PROPERTY REGISTRATION                       │
 └─────────────────────────────────────────────────────────────┘
 
-REGISTROS PENDIENTES DE VALIDACIÓN
-├─ [1] Apartamento en Benidorm (BVI)
-│   ├─ Propietario: Juan Pérez
-│   ├─ Documentos: 3/3 cargados
-│   ├─ [REVISAR DOCUMENTOS]
-│   └─ [VALIDAR Y FIRMAR]
+STEP 1: BASIC INFORMATION
+├─ Property description
+├─ Location (Province, District, Corregimiento)
+├─ Asset type (Dropdown)
+└─ Estimated value
+
+STEP 2: DIGITAL DOCUMENTS
+├─ Owner ID (photo)
+├─ Purchase-sale contract (PDF)
+├─ Property plans (image)
+└─ [GENERATE QR] ← Already implemented
+
+STEP 3: SUMMARY AND SUBMISSION
+├─ Information summary
+├─ Cryptographic hash of documents
+├─ [SUBMIT FOR LEGAL VALIDATION]
+└─ Status: "PENDING LEGAL VALIDATION"
+
+STEP 4: REAL-TIME TRACKING
+├─ Notary: [VALIDATING...] ✓ VALIDATED
+├─ Cadastre: [PENDING...]
+├─ Municipality: [PENDING...]
+├─ DGI: [PENDING...]
+└─ Public Registry: [PENDING...]
+
+FINAL RESULT
+├─ ✓ INSCRIBED IN PUBLIC REGISTRY
+├─ Digital Title of Ownership (downloadable)
+├─ Validation Certificate (downloadable)
+└─ [TOKENIZE PROPERTY] (for fractional investment phase)
+```
+
+### 5.2 Notary View: Validation Panel
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│ AEGIS REGISTRY - NOTARY PANEL                               │
+└─────────────────────────────────────────────────────────────┘
+
+REGISTRATIONS PENDING VALIDATION
+├─ [1] Apartment in Benidorm (BVI)
+│   ├─ Owner: Juan Pérez
+│   ├─ Documents: 3/3 uploaded
+│   ├─ [REVIEW DOCUMENTS]
+│   └─ [VALIDATE AND SIGN]
 │
-├─ [2] Villa en Nassau (Bahamas)
-│   ├─ Propietario: María García
-│   ├─ Documentos: 3/3 cargados
-│   ├─ [REVISAR DOCUMENTOS]
-│   └─ [VALIDAR Y FIRMAR]
+├─ [2] Villa in Nassau (Bahamas)
+│   ├─ Owner: María García
+│   ├─ Documents: 3/3 uploaded
+│   ├─ [REVIEW DOCUMENTS]
+│   └─ [VALIDATE AND SIGN]
 
-VALIDACIÓN DE DOCUMENTO
-├─ Cédula: ✓ Auténtica
-├─ Contrato: ✓ Válido
-├─ Planos: ✓ Firmados por ingeniero idóneo
-├─ [FIRMAR DIGITALMENTE]
-├─ [GENERAR ESCRITURA PÚBLICA]
-└─ Estado: VALIDADO ✓
+DOCUMENT VALIDATION
+├─ ID: ✓ Authentic
+├─ Contract: ✓ Valid
+├─ Plans: ✓ Signed by licensed engineer
+├─ [SIGN DIGITALLY]
+├─ [GENERATE PUBLIC DEED]
+└─ Status: VALIDATED ✓
 ```
 
-### 5.3 Vista del Registro Público: Panel de Inscripción
+### 5.3 Public Registry View: Inscription Panel
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ AEGIS REGISTRY - PANEL DEL REGISTRO PÚBLICO                 │
+│ AEGIS REGISTRY - PUBLIC REGISTRY PANEL                      │
 └─────────────────────────────────────────────────────────────┘
 
-REGISTROS LISTOS PARA INSCRIPCIÓN
-├─ [1] Apartamento en Benidorm (BVI)
-│   ├─ Validaciones completadas: 4/4 ✓
-│   ├─ Escritura pública: ✓ Notariada
-│   ├─ Certificado catastral: ✓ Válido
-│   ├─ Paz y salvo: ✓ Vigente
-│   ├─ Certificado fiscal: ✓ Válido
-│   ├─ [VERIFICAR INTEGRIDAD CRIPTOGRÁFICA]
-│   └─ [INSCRIBIR EN REGISTRO PÚBLICO]
+REGISTRATIONS READY FOR INSCRIPTION
+├─ [1] Apartment in Benidorm (BVI)
+│   ├─ Validations completed: 4/4 ✓
+│   ├─ Public deed: ✓ Notarized
+│   ├─ Cadastre certificate: ✓ Valid
+│   ├─ Clearance: ✓ Current
+│   ├─ Tax certificate: ✓ Valid
+│   ├─ [VERIFY CRYPTOGRAPHIC INTEGRITY]
+│   └─ [INSCRIBE IN PUBLIC REGISTRY]
 
-INSCRIPCIÓN COMPLETADA
-├─ Número de Folio: RP-2025-001234
-├─ Fecha de Inscripción: 28/11/2025
-├─ Título de Propiedad: [DESCARGAR]
-├─ Certificado de Inscripción: [DESCARGAR]
-└─ Hash de Inscripción: 0x1234567890abcdef...
+INSCRIPTION COMPLETED
+├─ Folio Number: RP-2025-001234
+├─ Inscription Date: 28/11/2025
+├─ Title of Ownership: [DOWNLOAD]
+├─ Inscription Certificate: [DOWNLOAD]
+└─ Inscription Hash: 0x1234567890abcdef...
 ```
 
 ---
 
-## 6. VALIDACIÓN CRIPTOGRÁFICA: EL DIFERENCIADOR
+## 6. CRYPTOGRAPHIC VALIDATION: THE DIFFERENTIATOR
 
-### 6.1 Cadena de Hashes para Integridad
+### 6.1 Hash Chain for Integrity
 
-Cada documento se hashea. Si alguien intenta modificar un documento después de ser validado, el hash no coincidirá.
+Each document is hashed. If someone tries to modify a document after it has been validated, the hash will not match.
 
 ```
-DOCUMENTO ORIGINAL (Contrato de Compra-Venta)
+ORIGINAL DOCUMENT (Purchase-Sale Contract)
     ↓
     SHA-256 HASH: 0xabcd1234...
     ↓
-ALMACENADO EN BLOCKCHAIN
+STORED ON BLOCKCHAIN
     ↓
-NOTARIO VALIDA: Verifica que hash coincide
+NOTARY VALIDATES: Verifies hash matches
     ↓
-SI ALGUIEN INTENTA MODIFICAR EL DOCUMENTO
+IF SOMEONE TRIES TO MODIFY THE DOCUMENT
     ↓
-NUEVO HASH: 0xdcba4321... (DIFERENTE)
+NEW HASH: 0xdcba4321... (DIFFERENT)
     ↓
-BLOCKCHAIN DETECTA MANIPULACIÓN: ¡FRAUDE!
+BLOCKCHAIN DETECTS TAMPERING: FRAUD!
 ```
 
-### 6.2 Cadena de Custodia Digital
+### 6.2 Digital Chain of Custody
 
 ```
-PROPIETARIO CARGA DOCUMENTOS
+OWNER UPLOADS DOCUMENTS
     ↓ Hash: 0xabc123...
-NOTARIO VALIDA
-    ↓ Firma digital del notario + Timestamp
-CATASTRO VALIDA
-    ↓ Firma digital del catastro + Timestamp
-MUNICIPALIDAD VALIDA
-    ↓ Firma digital de municipalidad + Timestamp
-DGI VALIDA
-    ↓ Firma digital de DGI + Timestamp
-REGISTRO PÚBLICO INSCRIBE
-    ↓ Firma digital del Registro + Timestamp
-BLOCKCHAIN REGISTRA TODO
+NOTARY VALIDATES
+    ↓ Notary digital signature + Timestamp
+CADASTRE VALIDATES
+    ↓ Cadastre digital signature + Timestamp
+MUNICIPALITY VALIDATES
+    ↓ Municipality digital signature + Timestamp
+DGI VALIDATES
+    ↓ DGI digital signature + Timestamp
+PUBLIC REGISTRY INSCRIBES
+    ↓ Registry digital signature + Timestamp
+BLOCKCHAIN RECORDS EVERYTHING
     ↓
-RESULTADO: Cadena de custodia digital inmutable
+RESULT: Immutable digital chain of custody
 ```
 
 ---
 
-## 7. VENTAJAS COMPETITIVAS ÚNICAS
+## 7. UNIQUE COMPETITIVE ADVANTAGES
 
-### 7.1 Comparación: Aegis Registry vs. Competencia
+### 7.1 Comparison: Aegis Registry vs. Competition
 
-| Aspecto | Blockchain Puro | Registro Tradicional | **Aegis Registry** |
+| Aspect | Pure Blockchain | Traditional Registry | **Aegis Registry** |
 | :--- | :--- | :--- | :--- |
-| **Validez Legal** | ✗ No vinculante | ✓ Legalmente válido | **✓ Legalmente válido + Blockchain** |
-| **Transparencia** | ✓ Total | ✗ Limitada | **✓ Total** |
-| **Velocidad** | ✓ Minutos | ✗ 7-14 días | **✓ 4-7 días** |
-| **Costo** | ✓ Bajo | ✗ Alto | **✓ Bajo** |
-| **Inmutabilidad** | ✓ Sí | ✗ No | **✓ Sí** |
-| **Auditoría** | ✓ Fácil | ✗ Difícil | **✓ Fácil** |
-| **Aceptación Legal** | ✗ No | ✓ Sí | **✓ Sí** |
-| **Interoperabilidad** | ✓ Global | ✗ Local | **✓ Multi-jurisdiccional** |
+| **Legal Validity** | ✗ Not binding | ✓ Legally valid | **✓ Legally valid + Blockchain** |
+| **Transparency** | ✓ Full | ✗ Limited | **✓ Full** |
+| **Speed** | ✓ Minutes | ✗ 7-14 days | **✓ 4-7 days** |
+| **Cost** | ✓ Low | ✗ High | **✓ Low** |
+| **Immutability** | ✓ Yes | ✗ No | **✓ Yes** |
+| **Auditability** | ✓ Easy | ✗ Difficult | **✓ Easy** |
+| **Legal Acceptance** | ✗ No | ✓ Yes | **✓ Yes** |
+| **Interoperability** | ✓ Global | ✗ Local | **✓ Multi-jurisdictional** |
 
 ---
 
-## 8. IMPLEMENTACIÓN EN EL HACKATHON
+## 8. HACKATHON IMPLEMENTATION
 
-### 8.1 MVP Mejorado: Pasos Adicionales
+### 8.1 Improved MVP: Additional Steps
 
-Tu MVP actual simula el registro. Ahora, para diferenciarte, añade:
+Your current MVP simulates registration. To differentiate, add:
 
-**FASE 1: Integración Legal Simulada (Horas 0-8)**
-- Crear rol de "Notario Validador"
-- Crear vista de panel de notario
-- Implementar función de validación notarial
-- Actualizar estado del activo a "VALIDADO POR NOTARIO"
+**PHASE 1: Simulated Legal Integration (Hours 0-8)**
+- Create "Notary Verifier" role
+- Create notary panel view
+- Implement notarial validation function
+- Update asset status to "VALIDATED BY NOTARY"
 
-**FASE 2: Cadena de Autoridades Simuladas (Horas 9-16)**
-- Crear roles de Catastro, Municipalidad, DGI, Registro Público
-- Crear vistas de panel para cada autoridad
-- Implementar funciones de validación para cada una
-- Crear flujo de aprobaciones secuenciales
+**PHASE 2: Simulated Authority Chain (Hours 9-16)**
+- Create roles for Cadastre, Municipality, DGI, Public Registry
+- Create panel views for each authority
+- Implement validation functions for each
+- Create sequential approval flow
 
-**FASE 3: Validación Criptográfica (Horas 17-24)**
-- Implementar hash SHA-256 de documentos
-- Verificar integridad de hashes en cada paso
-- Mostrar cadena de custodia completa en la UI
+**PHASE 3: Cryptographic Validation (Hours 17-24)**
+- Implement SHA-256 hashing of documents
+- Verify hash integrity at each step
+- Display full chain of custody in the UI
 
-**FASE 4: Presentación Final (Horas 25-48)**
-- Grabar demo mostrando el flujo COMPLETO
-- Explicar cómo Aegis Registry es un puente legal-digital
-- Mostrar cómo los documentos son validados criptográficamente
-- Demostrar que el registro es ahora legalmente válido
+**PHASE 4: Final Presentation (Hours 25-48)**
+- Record demo showing the COMPLETE flow
+- Explain how Aegis Registry is a legal-digital bridge
+- Show how documents are cryptographically validated
+- Demonstrate that the registration is now legally valid
 
-### 8.2 Script de Demo Mejorado (3 minutos)
+### 8.2 Improved Demo Script (3 minutes)
 
 ```
-[ESCENA 1 - 0:00-0:30]
-"Hola, soy Juan Pérez. Acabo de comprar un apartamento en BVI.
-En el proceso tradicional, esto tomaría 7-14 días y costaría $2,000.
-Con Aegis Registry, voy a mostrarles cómo funciona."
+[SCENE 1 - 0:00-0:30]
+"Hi, I'm Juan Pérez. I just bought an apartment in BVI.
+In the traditional process, this would take 7-14 days and cost $2,000.
+With Aegis Registry, I'll show you how it works."
 
-[ESCENA 2 - 0:30-1:00]
-"Primero, cargo mis documentos en Aegis Registry.
-Contrato de compra, cédula, planos. El sistema genera un QR único
-y un hash criptográfico de todos mis documentos."
+[SCENE 2 - 0:30-1:00]
+"First, I upload my documents to Aegis Registry.
+Purchase contract, ID, plans. The system generates a unique QR
+and a cryptographic hash of all my documents."
 
-[ESCENA 3 - 1:00-1:30]
-"Ahora, mi notario, María, accede al panel de validación.
-Revisa mis documentos, verifica que todo está correcto,
-y firma digitalmente. El sistema registra su firma y timestamp."
+[SCENE 3 - 1:00-1:30]
+"Now my notary, María, accesses the validation panel.
+She reviews my documents, verifies everything is correct,
+and signs digitally. The system records her signature and timestamp."
 
-[ESCENA 4 - 1:30-2:00]
-"Catastro, Municipalidad y DGI hacen lo mismo.
-Cada uno valida su parte. Todo en tiempo real."
+[SCENE 4 - 1:30-2:00]
+"Cadastre, Municipality and DGI do the same.
+Each one validates their part. All in real time."
 
-[ESCENA 5 - 2:00-2:30]
-"Finalmente, el Registro Público inscribe oficialmente mi propiedad.
-Mi registro es ahora legalmente válido EN PANAMÁ.
-Pero además, está en blockchain, es inmutable y auditable."
+[SCENE 5 - 2:00-2:30]
+"Finally, the Public Registry officially inscribes my property.
+My registration is now legally valid IN PANAMA.
+But it's also on blockchain—immutable and auditable."
 
-[ESCENA 6 - 2:30-3:00]
-"Aegis Registry: Donde la ley y la tecnología se encuentran.
-Más rápido. Más barato. Más seguro. Legalmente válido."
+[SCENE 6 - 2:30-3:00]
+"Aegis Registry: Where law and technology meet.
+Faster. Cheaper. Safer. Legally valid."
 ```
 
 ---
 
-## 9. DOCUMENTACIÓN PARA PRESENTACIÓN
+## 9. DOCUMENTATION FOR PRESENTATION
 
-### 9.1 Diapositiva Adicional: "El Diferenciador"
+### 9.1 Additional Slide: "The Differentiator"
 
 ```
-TÍTULO: "No es solo Blockchain. Es Ley + Blockchain."
+TITLE: "It's Not Just Blockchain. It's Law + Blockchain."
 
-CONTENIDO:
+CONTENT:
 ┌─────────────────────────────────────────────────────────┐
-│ BLOCKCHAIN PURO                                         │
-│ ✓ Rápido, transparente, inmutable                      │
-│ ✗ No tiene validez legal                               │
-│ ✗ Nadie lo reconoce como oficial                       │
+│ PURE BLOCKCHAIN                                          │
+│ ✓ Fast, transparent, immutable                           │
+│ ✗ No legal validity                                      │
+│ ✗ Not officially recognized                               │
 └─────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────┐
-│ REGISTRO TRADICIONAL                                    │
-│ ✓ Legalmente válido                                    │
-│ ✗ Lento, opaco, centralizado                          │
-│ ✗ Vulnerable a corrupción                             │
+│ TRADITIONAL REGISTRY                                      │
+│ ✓ Legally valid                                           │
+│ ✗ Slow, opaque, centralized                              │
+│ ✗ Vulnerable to corruption                               │
 └─────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────┐
-│ AEGIS REGISTRY (LO MEJOR DE AMBOS MUNDOS)              │
-│ ✓ Legalmente válido (inscrito en Registro Público)    │
-│ ✓ Rápido (4-7 días vs. 7-14 días)                     │
-│ ✓ Transparente (todos ven el proceso)                 │
-│ ✓ Inmutable (imposible falsificar)                    │
-│ ✓ Auditable (cadena de custodia digital)              │
-│ ✓ Multi-jurisdiccional (Panamá, BVI, Bahamas)         │
+│ AEGIS REGISTRY (BEST OF BOTH WORLDS)                     │
+│ ✓ Legally valid (inscribed in Public Registry)            │
+│ ✓ Fast (4-7 days vs. 7-14 days)                         │
+│ ✓ Transparent (everyone sees the process)                 │
+│ ✓ Immutable (cannot be forged)                            │
+│ ✓ Auditable (digital chain of custody)                   │
+│ ✓ Multi-jurisdictional (Panama, BVI, Bahamas)            │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 10. CONCLUSIÓN: TU VENTAJA COMPETITIVA
+## 10. CONCLUSION: YOUR COMPETITIVE ADVANTAGE
 
-**Otros proyectos de blockchain para registro de propiedades son solo eso: blockchain.**
+**Other blockchain projects for property registration are just that: blockchain.**
 
-**Aegis Registry es diferente porque:**
+**Aegis Registry is different because:**
 
-1. **Integra procesos legales reales** de Panamá (y puede expandirse a otras jurisdicciones)
-2. **Genera documentos legalmente válidos** (escritura pública, título de propiedad)
-3. **Crea una cadena de validación** donde cada autoridad certifica digitalmente
-4. **Usa criptografía** para garantizar integridad de documentos
-5. **Es más rápido y barato** que el proceso tradicional
-6. **Es auditable** de forma inmutable
+1. **It integrates real legal processes** in Panama (and can expand to other jurisdictions)
+2. **It produces legally valid documents** (public deed, title of ownership)
+3. **It creates a validation chain** where each authority certifies digitally
+4. **It uses cryptography** to guarantee document integrity
+5. **It is faster and cheaper** than the traditional process
+6. **It is auditable** in an immutable way
 
-Esto no es solo una aplicación blockchain. **Es una revolución en cómo se registran activos en jurisdicciones offshore.**
+This is not just a blockchain application. **It is a revolution in how assets are registered in offshore jurisdictions.**
 
-Los jueces lo verán inmediatamente: mientras otros proyectos están jugando con blockchain, tú estás resolviendo un problema real del mundo con una solución que es legalmente vinculante.
+Judges will see it immediately: while other projects are playing with blockchain, you are solving a real-world problem with a solution that is legally binding.
 
-**Eso es lo que te hará ganar.**
+**That is what will make you win.**
 
 ---
 
-## 11. PRÓXIMOS PASOS
+## 11. NEXT STEPS
 
-1. **Implementa los nuevos roles** en tu contrato inteligente
-2. **Crea las vistas de panel** para notario, catastro, municipalidad, DGI, Registro Público
-3. **Implementa la validación criptográfica** con hashes SHA-256
-4. **Actualiza tu demo** para mostrar el flujo completo con todas las autoridades
-5. **Prepara la narrativa** explicando cómo Aegis Registry es un puente legal-digital
-6. **Contacta a un notario de Panamá** (si es posible) para validar tu flujo legal
+1. **Implement the new roles** in your smart contract
+2. **Create panel views** for notary, cadastre, municipality, DGI, Public Registry
+3. **Implement cryptographic validation** with SHA-256 hashes
+4. **Update your demo** to show the full flow with all authorities
+5. **Prepare the narrative** explaining how Aegis Registry is a legal-digital bridge
+6. **Contact a notary in Panama** (if possible) to validate your legal flow
 
-¡Esto te diferenciará completamente de la competencia!
+This will set you completely apart from the competition!
