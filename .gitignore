@@ -1,4 +1,4 @@
-# Dependencias
+# Dependencies
 node_modules/
 .pnp/
 .pnp.js
@@ -6,11 +6,11 @@ node_modules/
 # Testing
 coverage/
 
-# Producción
+ 
 build/
 dist/
 
-# Archivos de entorno y secretos
+ 
 .env
 .env.local
 .env.development.local
@@ -24,16 +24,16 @@ yarn-error.log*
 logs/
 *.log
 
-# Base de datos local (SQLite)
+ 
 *.sqlite
 *.db
 backend/database.sqlite
 
-# Archivos subidos por usuarios (local)
+ 
 backend/uploads/*
 !backend/uploads/.gitkeep
 
-# Sistema Operativo
+ 
 .DS_Store
 Thumbs.db
 
