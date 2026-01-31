@@ -108,10 +108,10 @@ export default function Dashboard({ currentUser }) {
 
   const getIconByType = (type) => {
     switch (type) {
-      case 'Real Estate': return <Building2 className="w-5 h-5 text-blue-500" />;
-      case 'Vehicle': return <Car className="w-5 h-5 text-purple-500" />;
-      case 'Art & Collectibles': return <Gem className="w-5 h-5 text-pink-500" />;
-      default: return <Box className="w-5 h-5 text-slate-500" />;
+      case 'Real Estate': return <Building2 className="w-5 h-5 text-primary" />;
+      case 'Vehicle': return <Car className="w-5 h-5 text-primary-light" />;
+      case 'Art & Collectibles': return <Gem className="w-5 h-5 text-primary" />;
+      default: return <Box className="w-5 h-5 text-primary/70" />;
     }
   };
 
@@ -123,10 +123,10 @@ export default function Dashboard({ currentUser }) {
       <div className="animate-fade-in space-y-8">
         <div className="flex justify-between items-center">
             <div>
-                <h2 className="text-3xl font-bold text-slate-900">Validator Workstation</h2>
-                <p className="text-slate-500">Manage verification requests and legal document reviews.</p>
+                <h2 className="text-3xl font-bold text-primary">Validator Workstation</h2>
+                <p className="text-primary/70">Manage verification requests and legal document reviews.</p>
             </div>
-            <div className="flex items-center gap-3 bg-slate-800 text-white px-4 py-2 rounded-lg shadow-sm">
+            <div className="flex items-center gap-3 bg-primary text-white px-4 py-2 rounded-lg shadow-sm">
                 <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
                 <span className="text-xs font-bold uppercase tracking-wider">Node Active</span>
             </div>
@@ -134,50 +134,50 @@ export default function Dashboard({ currentUser }) {
 
         {/* Admin Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 border-l-4 border-l-amber-500">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-primary/10 border-l-4 border-l-amber-500">
                 <div className="flex justify-between items-start">
                     <div>
-                        <p className="text-slate-500 text-xs font-bold uppercase tracking-wider">Pending Validations</p>
-                        <h3 className="text-4xl font-bold text-slate-900 mt-2">{pendingAssets.length}</h3>
+                        <p className="text-primary/70 text-xs font-bold uppercase tracking-wider">Pending Validations</p>
+                        <h3 className="text-4xl font-bold text-primary mt-2">{pendingAssets.length}</h3>
                     </div>
                     <div className="p-3 bg-amber-50 text-amber-600 rounded-lg">
                         <ClipboardCheck className="w-6 h-6" />
                     </div>
                 </div>
-                <p className="text-xs text-slate-400 mt-2">Requires immediate attention</p>
+                <p className="text-xs text-primary/60 mt-2">Requires immediate attention</p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 border-l-4 border-l-blue-500">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-primary/10 border-l-4 border-l-primary">
                 <div className="flex justify-between items-start">
                     <div>
-                        <p className="text-slate-500 text-xs font-bold uppercase tracking-wider">Active Collaborators</p>
-                        <h3 className="text-4xl font-bold text-slate-900 mt-2">4</h3>
+                        <p className="text-primary/70 text-xs font-bold uppercase tracking-wider">Active Collaborators</p>
+                        <h3 className="text-4xl font-bold text-primary mt-2">4</h3>
                     </div>
-                    <div className="p-3 bg-blue-50 text-blue-600 rounded-lg">
+                    <div className="p-3 bg-primary/10 text-primary rounded-lg">
                         <Users className="w-6 h-6" />
                     </div>
                 </div>
-                <p className="text-xs text-slate-400 mt-2">Notaries & Lawyers online</p>
+                <p className="text-xs text-primary/60 mt-2">Notaries & Lawyers online</p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 border-l-4 border-l-emerald-500">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-primary/10 border-l-4 border-l-emerald-500">
                 <div className="flex justify-between items-start">
                     <div>
-                        <p className="text-slate-500 text-xs font-bold uppercase tracking-wider">System Status</p>
+                        <p className="text-primary/70 text-xs font-bold uppercase tracking-wider">System Status</p>
                         <h3 className="text-2xl font-bold text-emerald-600 mt-2">Operational</h3>
                     </div>
                     <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg">
                         <Activity className="w-6 h-6" />
                     </div>
                 </div>
-                <p className="text-xs text-slate-400 mt-2">Qubic Mainnet Synced</p>
+                <p className="text-xs text-primary/60 mt-2">Qubic Mainnet Synced</p>
             </div>
         </div>
 
         {/* Pending Requests Table */}
-        <div className="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
-            <div className="p-6 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
-                <h3 className="font-bold text-slate-800 flex items-center gap-2">
+        <div className="bg-white rounded-xl shadow-lg border border-primary/10 overflow-hidden">
+            <div className="p-6 border-b border-primary/10 bg-surface flex justify-between items-center">
+                <h3 className="font-bold text-primary flex items-center gap-2">
                     <AlertCircle className="w-5 h-5 text-amber-500" />
                     Verification Queue
                 </h3>
@@ -187,15 +187,15 @@ export default function Dashboard({ currentUser }) {
             </div>
             
             {pendingAssets.length === 0 ? (
-                <div className="p-12 text-center text-slate-400">
+                <div className="p-12 text-center text-primary/60">
                     <Check className="w-16 h-16 mx-auto mb-4 text-emerald-200" />
-                    <p className="text-lg font-medium text-slate-600">All caught up!</p>
+                    <p className="text-lg font-medium text-primary/80">All caught up!</p>
                     <p>No pending assets to validate.</p>
                 </div>
             ) : (
                 <div className="overflow-x-auto">
                     <table className="w-full text-left text-sm">
-                        <thead className="bg-white text-slate-500 font-bold border-b border-slate-100 uppercase text-xs tracking-wider">
+                        <thead className="bg-white text-primary/70 font-bold border-b border-primary/10 uppercase text-xs tracking-wider">
                             <tr>
                                 <th className="px-6 py-4">Date</th>
                                 <th className="px-6 py-4">Asset Description</th>
@@ -204,29 +204,29 @@ export default function Dashboard({ currentUser }) {
                                 <th className="px-6 py-4 text-right">Action</th>
                             </tr>
                         </thead>
-                        <tbody className="divide-y divide-slate-50">
+                        <tbody className="divide-y divide-primary/5">
                             {pendingAssets.map((asset) => (
-                                <tr key={asset.assetId} className="hover:bg-amber-50/30 transition-colors">
-                                    <td className="px-6 py-4 font-mono text-xs text-slate-500">
+                                <tr key={asset.assetId} className="hover:bg-primary/5 transition-colors">
+                                    <td className="px-6 py-4 font-mono text-xs text-primary/60">
                                         {new Date(asset.timestamp).toLocaleDateString()}
                                     </td>
                                     <td className="px-6 py-4">
-                                        <div className="font-bold text-slate-800">{asset.description.substring(0, 40)}...</div>
-                                        <div className="text-xs text-slate-400 font-mono">Owner: {asset.owner.substring(0, 6)}...{asset.owner.substring(asset.owner.length - 4)}</div>
+                                        <div className="font-bold text-primary">{asset.description.substring(0, 40)}...</div>
+                                        <div className="text-xs text-primary/60 font-mono">Owner: {asset.owner.substring(0, 6)}...{asset.owner.substring(asset.owner.length - 4)}</div>
                                     </td>
                                     <td className="px-6 py-4">
-                                        <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">
+                                        <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-primary/10 text-primary text-xs font-medium">
                                             {getIconByType(asset.type)}
                                             {asset.type}
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 font-mono font-medium text-slate-700">
+                                    <td className="px-6 py-4 font-mono font-medium text-primary/80">
                                         {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(asset.value || 0)}
                                     </td>
                                     <td className="px-6 py-4 text-right">
                                         <button 
                                             onClick={() => setSelectedAsset(asset)}
-                                            className="bg-slate-900 text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-slate-800 transition-colors shadow-sm flex items-center gap-2 ml-auto"
+                                            className="bg-primary text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-primary-dark transition-colors shadow-sm flex items-center gap-2 ml-auto"
                                         >
                                             <ShieldCheck className="w-3 h-3" />
                                             Validate
@@ -254,45 +254,45 @@ export default function Dashboard({ currentUser }) {
       {/* HEADER */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <h2 className="text-3xl font-bold text-slate-900 tracking-tight">My Asset Portfolio</h2>
-          <p className="text-slate-500">Welcome back, <span className="font-mono font-medium text-slate-700">{currentUser}</span></p>
+          <h2 className="text-3xl font-bold text-primary tracking-tight">My Asset Portfolio</h2>
+          <p className="text-primary/70">Welcome back, <span className="font-mono font-medium text-primary">{currentUser}</span></p>
         </div>
-        <div className="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-slate-200 shadow-sm">
+        <div className="flex items-center gap-3 bg-white px-4 py-2 rounded-full border border-primary/10 shadow-sm">
             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-            <span className="text-xs font-bold text-slate-600 uppercase tracking-wider">Qubic Network Active</span>
+            <span className="text-xs font-bold text-primary/80 uppercase tracking-wider">Qubic Network Active</span>
         </div>
       </div>
 
       {/* STATS */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div className="md:col-span-2 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-6 text-white shadow-xl relative overflow-hidden group">
+        <div className="md:col-span-2 bg-primary rounded-2xl p-6 text-white shadow-xl relative overflow-hidden group">
             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Activity className="w-32 h-32" />
             </div>
-            <p className="text-slate-400 text-sm font-medium mb-1 uppercase tracking-wider">Total Value Locked (TVL)</p>
+            <p className="text-white/80 text-sm font-medium mb-1 uppercase tracking-wider">Total Value Locked (TVL)</p>
             <h3 className="text-4xl font-bold font-mono mb-2">
                 {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalValue)}
             </h3>
-            <div className="flex items-center gap-2 text-emerald-400 text-sm font-medium">
+            <div className="flex items-center gap-2 text-emerald-300 text-sm font-medium">
                 <TrendingUp className="w-4 h-4" />
                 <span>+12.5% this week</span>
             </div>
         </div>
 
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border border-primary/10">
             <div className="flex items-center justify-between mb-4">
-                <p className="text-slate-500 text-sm font-medium">Your Assets</p>
-                <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                <p className="text-primary/70 text-sm font-medium">Your Assets</p>
+                <div className="p-2 bg-primary/10 text-primary rounded-lg">
                     <Box className="w-5 h-5" />
                 </div>
             </div>
-            <p className="text-3xl font-bold text-slate-900">{assets.length}</p>
-            <p className="text-xs text-slate-400 mt-1">Tokenized RWAs</p>
+            <p className="text-3xl font-bold text-primary">{assets.length}</p>
+            <p className="text-xs text-primary/60 mt-1">Tokenized RWAs</p>
         </div>
 
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border border-primary/10">
             <div className="flex items-center justify-between mb-4">
-                <p className="text-slate-500 text-sm font-medium">Legal Savings</p>
+                <p className="text-primary/70 text-sm font-medium">Legal Savings</p>
                 <div className="p-2 bg-emerald-50 text-emerald-600 rounded-lg">
                     <ShieldCheck className="w-5 h-5" />
                 </div>
@@ -300,25 +300,25 @@ export default function Dashboard({ currentUser }) {
             <p className="text-3xl font-bold text-emerald-600">
                 {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(legalSavings)}
             </p>
-            <p className="text-xs text-slate-400 mt-1">Saved via Panama Jurisdiction</p>
+            <p className="text-xs text-primary/60 mt-1">Saved via Panama Jurisdiction</p>
         </div>
       </div>
 
       <div className="grid md:grid-cols-[1fr_300px] gap-8">
         {/* LEFT: Asset List */}
-        <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <div className="p-6 border-b border-slate-100 flex justify-between items-center">
-                <h3 className="font-bold text-slate-800">Your Registered Assets</h3>
+        <div className="bg-white rounded-xl shadow-sm border border-primary/10 overflow-hidden">
+            <div className="p-6 border-b border-primary/10 flex justify-between items-center">
+                <h3 className="font-bold text-primary">Your Registered Assets</h3>
             </div>
             <div className="overflow-x-auto">
             {assets.length === 0 ? (
-                <div className="p-12 text-center text-slate-500">
-                <AlertCircle className="w-12 h-12 mx-auto mb-3 text-slate-300" />
+                <div className="p-12 text-center text-primary/60">
+                <AlertCircle className="w-12 h-12 mx-auto mb-3 text-primary/30" />
                 <p>No assets found. Start by registering one!</p>
                 </div>
             ) : (
                 <table className="w-full text-left text-sm">
-                <thead className="bg-slate-50 text-slate-500 font-medium border-b border-slate-100">
+                <thead className="bg-surface text-primary/70 font-medium border-b border-primary/10">
                     <tr>
                     <th className="px-6 py-3">Asset</th>
                     <th className="px-6 py-3">Type</th>
@@ -326,12 +326,12 @@ export default function Dashboard({ currentUser }) {
                     <th className="px-6 py-3 text-right">Action</th>
                     </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-50">
+                <tbody className="divide-y divide-primary/5">
                     {assets.map((asset) => (
-                    <tr key={asset.assetId} className="hover:bg-slate-50 transition-colors cursor-pointer group" onClick={() => setSelectedAsset(asset)}>
+                    <tr key={asset.assetId} className="hover:bg-surface transition-colors cursor-pointer group" onClick={() => setSelectedAsset(asset)}>
                         <td className="px-6 py-4">
-                        <div className="font-medium text-slate-900 group-hover:text-blue-600 transition-colors">{asset.description.substring(0, 30)}...</div>
-                        <div className="flex items-center gap-1 text-xs text-slate-400 font-mono mt-1">
+                        <div className="font-medium text-primary group-hover:text-primary-dark transition-colors">{asset.description.substring(0, 30)}...</div>
+                        <div className="flex items-center gap-1 text-xs text-primary/60 font-mono mt-1">
                              <span className="text-emerald-600 font-bold">{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(asset.value || 0)}</span>
                         </div>
                         </td>
@@ -353,7 +353,7 @@ export default function Dashboard({ currentUser }) {
                         )}
                         </td>
                         <td className="px-6 py-4 text-right">
-                        <span className="text-slate-400 group-hover:text-blue-600 text-xs font-bold transition-colors">View Details &rarr;</span>
+                        <span className="text-primary/60 group-hover:text-primary text-xs font-bold transition-colors">View Details &rarr;</span>
                         </td>
                     </tr>
                     ))}
@@ -364,22 +364,22 @@ export default function Dashboard({ currentUser }) {
         </div>
 
         {/* RIGHT: Blockchain Live Feed */}
-        <div className="bg-slate-900 rounded-xl p-4 text-slate-400 font-mono text-xs h-fit border border-slate-800 shadow-lg">
-            <div className="flex items-center gap-2 mb-4 pb-2 border-b border-slate-800 text-slate-300">
-                <Activity className="w-4 h-4 text-emerald-500" />
+        <div className="bg-primary rounded-xl p-4 text-white/80 font-mono text-xs h-fit border border-primary-dark/50 shadow-lg">
+            <div className="flex items-center gap-2 mb-4 pb-2 border-b border-white/15 text-white/90">
+                <Activity className="w-4 h-4 text-emerald-400" />
                 <span className="font-bold">Live Network Activity</span>
             </div>
             <div className="space-y-3 min-h-[200px]">
                 {logs.map((log, i) => (
                     <div key={i} className="animate-fade-in">
-                        <span className="text-slate-600 mr-2">[{log.time}]</span>
-                        <span className={log.type === 'success' ? 'text-emerald-400' : log.type === 'warning' ? 'text-amber-400' : 'text-slate-300'}>
+                        <span className="text-white/50 mr-2">[{log.time}]</span>
+                        <span className={log.type === 'success' ? 'text-emerald-400' : log.type === 'warning' ? 'text-amber-400' : 'text-white/70'}>
                             {log.msg}
                         </span>
                     </div>
                 ))}
             </div>
-            <div className="mt-4 pt-2 border-t border-slate-800 text-center text-[10px] text-slate-600 uppercase tracking-widest">
+            <div className="mt-4 pt-2 border-t border-white/15 text-center text-[10px] text-white/50 uppercase tracking-widest">
                 Qubic Mainnet • Block Height 89,212
             </div>
         </div>
@@ -403,43 +403,43 @@ function AssetModal({ asset, onClose, onVerify, isAdmin }) {
 
     return (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-slate-200">
-            <div className="p-6 border-b border-slate-100 flex justify-between items-start bg-slate-50/50">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-primary/10">
+            <div className="p-6 border-b border-primary/10 flex justify-between items-start bg-surface">
               <div>
-                <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                <h3 className="text-xl font-bold text-primary flex items-center gap-2">
                   {asset.description}
                   {asset.status === 'Verified' && <ShieldCheck className="w-5 h-5 text-emerald-500" />}
                 </h3>
-                <p className="text-sm text-slate-500 font-mono mt-1 break-all">ID: {asset.assetId}</p>
+                <p className="text-sm text-primary/70 font-mono mt-1 break-all">ID: {asset.assetId}</p>
               </div>
-              <button onClick={onClose} className="p-2 hover:bg-slate-200 rounded-full transition-colors">
-                <X className="w-5 h-5 text-slate-500" />
+              <button onClick={onClose} className="p-2 hover:bg-primary/10 rounded-full transition-colors">
+                <X className="w-5 h-5 text-primary/70" />
               </button>
             </div>
 
             <div className="grid md:grid-cols-3 h-full">
               {/* Detalles e Imágenes */}
-              <div className="md:col-span-2 p-8 space-y-8 border-r border-slate-100">
+              <div className="md:col-span-2 p-8 space-y-8 border-r border-primary/10">
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Value</label>
+                    <label className="text-xs font-bold text-primary/60 uppercase tracking-wider">Value</label>
                     <p className="text-xl font-bold text-emerald-600">
                         {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(asset.value || 0)}
                     </p>
                   </div>
                   <div>
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Owner</label>
-                    <p className="text-slate-600 font-mono text-xs mt-1 truncate p-2 bg-slate-100 rounded border border-slate-200">{asset.owner}</p>
+                    <label className="text-xs font-bold text-primary/60 uppercase tracking-wider">Owner</label>
+                    <p className="text-primary/80 font-mono text-xs mt-1 truncate p-2 bg-surface rounded border border-primary/10">{asset.owner}</p>
                   </div>
                 </div>
 
                 {/* FOTOS */}
                 {asset.documents && asset.documents.some(d => d.category === 'photo') && (
                     <div>
-                        <h4 className="text-sm font-bold text-slate-900 mb-4">Asset Evidence</h4>
+                        <h4 className="text-sm font-bold text-primary mb-4">Asset Evidence</h4>
                         <div className="grid grid-cols-3 gap-2">
                             {asset.documents.filter(d => d.category === 'photo').map((photo, idx) => (
-                                <div key={idx} className="aspect-square rounded-lg overflow-hidden border border-slate-200 bg-slate-100">
+                                <div key={idx} className="aspect-square rounded-lg overflow-hidden border border-primary/10 bg-surface">
                                     <img src={photo.path || photo.preview} alt="asset" className="w-full h-full object-cover hover:scale-110 transition-transform" />
                                 </div>
                             ))}
@@ -449,42 +449,42 @@ function AssetModal({ asset, onClose, onVerify, isAdmin }) {
 
                 {/* DOCUMENTOS */}
                 <div>
-                  <h4 className="text-sm font-bold text-slate-900 mb-4 flex items-center gap-2">
-                    <FileText className="w-4 h-4 text-blue-500" />
+                  <h4 className="text-sm font-bold text-primary mb-4 flex items-center gap-2">
+                    <FileText className="w-4 h-4 text-primary" />
                     Legal Documents
                   </h4>
                   <div className="space-y-2">
                     {asset.documents && asset.documents.filter(d => d.category !== 'photo').length > 0 ? (
                       asset.documents.filter(d => d.category !== 'photo').map((doc, i) => (
-                        <div key={i} className="flex items-center justify-between p-3 bg-white rounded-lg border border-slate-200 hover:border-blue-300 transition-colors group shadow-sm">
+                        <div key={i} className="flex items-center justify-between p-3 bg-white rounded-lg border border-primary/10 hover:border-primary/30 transition-colors group shadow-sm">
                           <div className="flex items-center gap-3">
                             <div className="w-8 h-8 bg-red-50 text-red-500 rounded flex items-center justify-center">
                                 <FileText className="w-4 h-4" />
                             </div>
                             <div>
-                              <p className="text-sm font-medium text-slate-700">{doc.name}</p>
-                              <p className="text-xs text-slate-400">{doc.size} • {doc.date}</p>
+                              <p className="text-sm font-medium text-primary/90">{doc.name}</p>
+                              <p className="text-xs text-primary/60">{doc.size} • {doc.date}</p>
                             </div>
                           </div>
-                          <button className="text-slate-400 group-hover:text-blue-600 text-xs font-bold">View PDF</button>
+                          <button className="text-primary/60 group-hover:text-primary text-xs font-bold">View PDF</button>
                         </div>
                       ))
                     ) : (
-                      <p className="text-sm text-slate-400 italic">No documents uploaded.</p>
+                      <p className="text-sm text-primary/60 italic">No documents uploaded.</p>
                     )}
                   </div>
                 </div>
               </div>
 
               {/* Panel de Validación (Derecha) */}
-              <div className="p-8 bg-slate-50">
-                <h4 className="text-sm font-bold text-slate-900 mb-6 uppercase tracking-wider flex items-center gap-2">
+              <div className="p-8 bg-surface">
+                <h4 className="text-sm font-bold text-primary mb-6 uppercase tracking-wider flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4" />
                     Verification Process
                 </h4>
 
                 <div className="space-y-6 relative">
-                  <div className="absolute left-3.5 top-2 bottom-2 w-0.5 bg-slate-200"></div>
+                  <div className="absolute left-3.5 top-2 bottom-2 w-0.5 bg-primary/20"></div>
 
                   {[
                     { id: 'notary', title: 'Notary Validation', desc: 'Identity & Deed Check' },
@@ -496,18 +496,18 @@ function AssetModal({ asset, onClose, onVerify, isAdmin }) {
                       
                       return (
                         <div key={idx} className="relative flex gap-4 group">
-                            <div className={`w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center z-10 border-2 transition-colors ${isStepVerified ? 'bg-emerald-500 border-emerald-500 text-white' : 'bg-white border-slate-300 text-slate-300'}`}>
+                            <div className={`w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center z-10 border-2 transition-colors ${isStepVerified ? 'bg-emerald-500 border-emerald-500 text-white' : 'bg-white border-primary/30 text-primary/40'}`}>
                                 {isStepVerified ? <Check className="w-4 h-4" /> : <span className="text-xs font-bold">{idx + 1}</span>}
                             </div>
                             <div>
-                                <p className={`text-sm font-bold ${isStepVerified ? 'text-slate-900' : 'text-slate-400'}`}>{step.title}</p>
-                                <p className="text-xs text-slate-500">{step.desc}</p>
+                                <p className={`text-sm font-bold ${isStepVerified ? 'text-primary' : 'text-primary/60'}`}>{step.title}</p>
+                                <p className="text-xs text-primary/60">{step.desc}</p>
                                 
                                 {/* Botón de acción granular para Admin */}
                                 {isAdmin && !isStepVerified && asset.status !== 'Verified' && (
                                     <button 
                                         onClick={() => handleVerifyClick(step.id)}
-                                        className="mt-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded hover:bg-blue-200 transition-colors"
+                                        className="mt-2 text-xs bg-primary/15 text-primary px-2 py-1 rounded hover:bg-primary/25 transition-colors"
                                     >
                                         Approve Step
                                     </button>
@@ -519,20 +519,20 @@ function AssetModal({ asset, onClose, onVerify, isAdmin }) {
                 </div>
 
                 {isAdmin && asset.status !== 'Verified' && (
-                    <div className="mt-8 pt-6 border-t border-slate-200">
+                    <div className="mt-8 pt-6 border-t border-primary/20">
                         <button
                           onClick={() => handleVerifyClick(null)}
-                          className="w-full bg-slate-900 text-white py-3 rounded-lg font-bold hover:bg-slate-800 shadow-lg flex items-center justify-center gap-2"
+                          className="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-primary-dark shadow-lg flex items-center justify-center gap-2"
                         >
                           <ShieldCheck className="w-4 h-4" />
                           Complete Validation
                         </button>
-                        <p className="text-[10px] text-center text-slate-400 mt-2">This will mint the asset on Qubic Chain</p>
+                        <p className="text-[10px] text-center text-primary/60 mt-2">This will mint the asset on Qubic Chain</p>
                     </div>
                 )}
                 
                 {asset.status === 'Verified' && (
-                     <div className="mt-8 pt-6 border-t border-slate-200 text-center">
+                     <div className="mt-8 pt-6 border-t border-primary/20 text-center">
                          <div className="inline-flex items-center justify-center w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full mb-2">
                              <Check className="w-6 h-6" />
                          </div>

@@ -117,17 +117,17 @@ export default function RegisterAsset({ currentUser }) {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full mb-4">
             <CheckCircle className="w-8 h-8" />
           </div>
-          <h2 className="text-3xl font-bold text-slate-900">Registration Successful!</h2>
-          <p className="text-slate-500 mt-2">Your asset has been submitted to the Qubic blockchain.</p>
+          <h2 className="text-3xl font-bold text-primary">Registration Successful!</h2>
+          <p className="text-primary/70 mt-2">Your asset has been submitted to the Qubic blockchain.</p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
-          <div className="bg-slate-900 text-white p-6 flex justify-between items-center">
+        <div className="bg-white rounded-2xl shadow-lg border border-primary/10 overflow-hidden">
+          <div className="bg-primary text-white p-6 flex justify-between items-center">
             <div>
-              <p className="text-slate-400 text-xs uppercase tracking-wider font-bold">Asset ID</p>
+              <p className="text-white/80 text-xs uppercase tracking-wider font-bold">Asset ID</p>
               <p className="font-mono text-sm md:text-base truncate max-w-[200px] md:max-w-sm">{registeredAsset.assetId}</p>
             </div>
-            <div className="px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-bold rounded-full border border-amber-500/50">
+            <div className="px-3 py-1 bg-amber-500/20 text-amber-300 text-xs font-bold rounded-full border border-amber-500/50">
               PENDING VERIFICATION
             </div>
           </div>
@@ -135,43 +135,43 @@ export default function RegisterAsset({ currentUser }) {
           <div className="p-8 grid md:grid-cols-[1fr_auto] gap-8 items-center">
             <div className="space-y-4">
               <div>
-                <p className="text-xs text-slate-400 uppercase font-bold">Description</p>
-                <p className="text-slate-800 font-medium">{registeredAsset.description}</p>
+                <p className="text-xs text-primary/60 uppercase font-bold">Description</p>
+                <p className="text-primary font-medium">{registeredAsset.description}</p>
               </div>
               <div>
-                <p className="text-xs text-slate-400 uppercase font-bold">Jurisdiction</p>
-                <p className="text-slate-800">{registeredAsset.jurisdiction}</p>
+                <p className="text-xs text-primary/60 uppercase font-bold">Jurisdiction</p>
+                <p className="text-primary">{registeredAsset.jurisdiction}</p>
               </div>
               <div>
-                <p className="text-xs text-slate-400 uppercase font-bold">Owner</p>
-                <p className="text-slate-600 text-sm font-mono truncate">{registeredAsset.owner}</p>
+                <p className="text-xs text-primary/60 uppercase font-bold">Owner</p>
+                <p className="text-primary/80 text-sm font-mono truncate">{registeredAsset.owner}</p>
               </div>
               {/* Mostrar si hay fotos subidas */}
               {registeredAsset.documents && registeredAsset.documents.some(d => d.category === 'photo') && (
                  <div>
-                   <p className="text-xs text-slate-400 uppercase font-bold">Photos</p>
-                   <p className="text-slate-800 text-sm">{registeredAsset.documents.filter(d => d.category === 'photo').length} uploaded</p>
+                   <p className="text-xs text-primary/60 uppercase font-bold">Photos</p>
+                   <p className="text-primary text-sm">{registeredAsset.documents.filter(d => d.category === 'photo').length} uploaded</p>
                  </div>
               )}
             </div>
 
-            <div className="flex flex-col items-center bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <div className="flex flex-col items-center bg-surface p-4 rounded-xl border border-primary/10">
               <img src={qrUrl} alt="Asset QR Code" className="w-32 h-32 mix-blend-multiply" />
-              <p className="text-[10px] text-slate-400 mt-2 font-medium uppercase tracking-wide">Scan to Verify</p>
+              <p className="text-[10px] text-primary/60 mt-2 font-medium uppercase tracking-wide">Scan to Verify</p>
             </div>
           </div>
 
-          <div className="bg-slate-50 p-6 flex gap-4 border-t border-slate-100">
+          <div className="bg-surface p-6 flex gap-4 border-t border-primary/10">
             <button 
               onClick={() => window.print()}
-              className="flex-1 flex items-center justify-center gap-2 bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-all font-medium"
+              className="flex-1 flex items-center justify-center gap-2 bg-white border border-primary/20 text-primary px-4 py-2 rounded-lg hover:bg-primary/5 hover:border-primary/30 transition-all font-medium"
             >
               <Printer className="w-4 h-4" />
               Print Label
             </button>
             <button 
               onClick={() => setRegisteredAsset(null)}
-              className="flex-1 flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all font-medium shadow-md hover:shadow-lg"
+              className="flex-1 flex items-center justify-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-all font-medium shadow-md hover:shadow-lg"
             >
               Register Another
               <ArrowRight className="w-4 h-4" />
@@ -184,10 +184,10 @@ export default function RegisterAsset({ currentUser }) {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h2 className="text-3xl font-bold text-slate-900 mb-2">Register New Asset</h2>
-      <p className="text-slate-500 mb-8">Submit real-world assets for verification on the Qubic blockchain.</p>
+      <h2 className="text-3xl font-bold text-primary mb-2">Register New Asset</h2>
+      <p className="text-primary/70 mb-8">Submit real-world assets for verification on the Qubic blockchain.</p>
 
-      <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+      <div className="bg-white p-8 rounded-xl shadow-sm border border-primary/10">
         {status.error && (
           <div className="mb-6 p-4 bg-red-50 text-red-700 rounded-lg border border-red-200 flex items-start gap-3">
             <div className="mt-1 text-xl">⚠️</div>
@@ -200,12 +200,12 @@ export default function RegisterAsset({ currentUser }) {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Asset Type</label>
+            <label className="block text-sm font-medium text-primary mb-2">Asset Type</label>
             <select
               name="type"
               value={formData.type}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
+              className="w-full px-4 py-3 rounded-lg border border-primary/20 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-white text-primary"
               required
             >
               <option value="">Select Type...</option>
@@ -218,12 +218,12 @@ export default function RegisterAsset({ currentUser }) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Jurisdiction</label>
+            <label className="block text-sm font-medium text-primary mb-2">Jurisdiction</label>
             <select
               name="jurisdiction"
               value={formData.jurisdiction}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
+              className="w-full px-4 py-3 rounded-lg border border-primary/20 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-white text-primary"
               required
             >
               <option value="">Select Jurisdiction...</option>
@@ -243,31 +243,31 @@ export default function RegisterAsset({ currentUser }) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Owner Address (Qubic ID)</label>
+            <label className="block text-sm font-medium text-primary mb-2">Owner Address (Qubic ID)</label>
             <div className="relative">
               <input
                 type="text"
                 name="owner"
                 value={formData.owner}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-100 text-slate-500 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none font-mono text-sm cursor-not-allowed"
+                className="w-full px-4 py-3 bg-surface text-primary/70 rounded-lg border border-primary/20 focus:ring-2 focus:ring-primary focus:border-transparent outline-none font-mono text-sm cursor-not-allowed"
                 placeholder="0x..."
                 required
                 readOnly
               />
               <button 
                 type="button"
-                className="absolute right-3 top-3 text-slate-400 hover:text-blue-600 transition-colors"
+                className="absolute right-3 top-3 text-primary/50 hover:text-primary transition-colors"
                 title="Address locked to current user"
               >
                 <ShieldCheck className="w-5 h-5" /> 
               </button>
             </div>
-            <p className="text-xs text-slate-400 mt-1">The public key of the asset owner wallet (You).</p>
+            <p className="text-xs text-primary/60 mt-1">The public key of the asset owner wallet (You).</p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Estimated Value (USD)</label>
+            <label className="block text-sm font-medium text-primary mb-2">Estimated Value (USD)</label>
             <input
               type="number"
               name="value"
@@ -275,31 +275,31 @@ export default function RegisterAsset({ currentUser }) {
               onChange={handleChange}
               min="0"
               placeholder="e.g. 1250000"
-              className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+              className="w-full px-4 py-3 rounded-lg border border-primary/20 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-primary"
               required
             />
-            <p className="text-xs text-slate-400 mt-1">Current market value estimation for initial tokenization.</p>
+            <p className="text-xs text-primary/60 mt-1">Current market value estimation for initial tokenization.</p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Asset Description</label>
+            <label className="block text-sm font-medium text-primary mb-2">Asset Description</label>
             <textarea
               name="description"
               value={formData.description}
               onChange={handleChange}
               rows="4"
               placeholder="e.g. Luxury Villa located at 123 Ocean Drive, Nassau..."
-              className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+              className="w-full px-4 py-3 rounded-lg border border-primary/20 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-primary"
               required
             ></textarea>
           </div>
 
           {/* Sección de Fotos Restaurada */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Asset Photos (Required)</label>
+            <label className="block text-sm font-medium text-primary mb-2">Asset Photos (Required)</label>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
               {photos.map((photo, idx) => (
-                <div key={idx} className="relative aspect-square rounded-lg overflow-hidden border border-slate-200 group">
+                <div key={idx} className="relative aspect-square rounded-lg overflow-hidden border border-primary/20 group">
                   <img src={photo.preview} alt="preview" className="w-full h-full object-cover" />
                   <button
                     type="button"
@@ -310,7 +310,7 @@ export default function RegisterAsset({ currentUser }) {
                   </button>
                 </div>
               ))}
-              <label className="border-2 border-dashed border-slate-300 rounded-lg aspect-square flex flex-col items-center justify-center cursor-pointer hover:bg-slate-50 transition-colors">
+              <label className="border-2 border-dashed border-primary/20 rounded-lg aspect-square flex flex-col items-center justify-center cursor-pointer hover:bg-surface transition-colors">
                 <input
                   type="file"
                   accept="image/*"
@@ -318,15 +318,15 @@ export default function RegisterAsset({ currentUser }) {
                   onChange={handlePhotoChange}
                   className="hidden"
                 />
-                <Upload className="w-6 h-6 text-slate-400 mb-1" />
-                <span className="text-xs text-slate-500">Add Photo</span>
+                <Upload className="w-6 h-6 text-primary/50 mb-1" />
+                <span className="text-xs text-primary/60">Add Photo</span>
               </label>
             </div>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Legal Documents (PDF/Images)</label>
-            <div className="border-2 border-dashed border-slate-300 rounded-lg p-6 text-center hover:bg-slate-50 transition-colors relative">
+            <label className="block text-sm font-medium text-primary mb-2">Legal Documents (PDF/Images)</label>
+            <div className="border-2 border-dashed border-primary/20 rounded-lg p-6 text-center hover:bg-surface transition-colors relative">
               <input 
                 type="file" 
                 multiple 
@@ -334,19 +334,19 @@ export default function RegisterAsset({ currentUser }) {
                 className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                 accept=".pdf,image/*"
               />
-              <Upload className="w-8 h-8 text-slate-400 mx-auto mb-2" />
-              <p className="text-sm text-slate-500 font-medium">Click to upload or drag and drop</p>
-              <p className="text-xs text-slate-400 mt-1">PDF, JPG, PNG (Max 10MB)</p>
+              <Upload className="w-8 h-8 text-primary/50 mx-auto mb-2" />
+              <p className="text-sm text-primary/70 font-medium">Click to upload or drag and drop</p>
+              <p className="text-xs text-primary/60 mt-1">PDF, JPG, PNG (Max 10MB)</p>
             </div>
             
             {documents.length > 0 && (
               <div className="mt-3 space-y-2">
                 {documents.map((doc, idx) => (
-                  <div key={idx} className="flex items-center p-2 bg-slate-50 rounded border border-slate-200">
-                    <FileText className="w-4 h-4 text-blue-500 mr-2" />
+                  <div key={idx} className="flex items-center p-2 bg-surface rounded border border-primary/10">
+                    <FileText className="w-4 h-4 text-primary mr-2" />
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-slate-700 truncate">{doc.name}</p>
-                      <p className="text-xs text-slate-400">{doc.size}</p>
+                      <p className="text-sm font-medium text-primary truncate">{doc.name}</p>
+                      <p className="text-xs text-primary/60">{doc.size}</p>
                     </div>
                     <CheckCircle className="w-4 h-4 text-emerald-500" />
                   </div>
@@ -358,7 +358,7 @@ export default function RegisterAsset({ currentUser }) {
           <button
             type="submit"
             disabled={status.loading}
-            className="w-full bg-blue-600 text-white font-semibold py-4 rounded-lg hover:bg-blue-700 transition-all disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-0.5"
+            className="w-full bg-primary text-white font-semibold py-4 rounded-lg hover:bg-primary-dark transition-all disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center shadow-lg transform hover:-translate-y-0.5"
           >
             {status.loading ? (
               <div className="flex items-center gap-2">

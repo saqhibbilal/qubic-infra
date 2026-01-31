@@ -6,10 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Voces', 'system-ui', 'sans-serif'],
+      },
       colors: {
-        primary: "#0f172a", // Slate 900
-        secondary: "#334155", // Slate 700
-        accent: "#3b82f6", // Blue 500
+        primary: "#1F3A34",
+        surface: "#F4F8F9",
+        "primary-dark": "#162d28",
+        "primary-light": "#2d524a",
       },
     },
   },

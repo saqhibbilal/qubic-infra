@@ -42,7 +42,7 @@ function App() {
             element={<Dashboard currentUser={user} />} // Pasamos el usuario como prop
           />
 
-          <Route path="*" element={<div className="p-10 text-center">404 - Not Found</div>} />
+          <Route path="*" element={<div className="p-10 text-center text-primary font-medium">404 - Not Found</div>} />
         </Routes>
       </Layout>
     </Router>
