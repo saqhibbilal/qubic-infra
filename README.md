@@ -1,73 +1,23 @@
-# 🛡️ Aegis Registry
+# Qubic Cosmos
 
-> **Track 1: Nostromo Launchpad (Payments & RWAs)**
-> *A decentralized protocol for verifyng, registering, and tokenizing Real World Assets (Real Estate, Vehicles, Art) on the Qubic Network.*
+**Qubic Cosmos** is a web app for registering and verifying real-world assets (RWAs)—such as real estate, vehicles, and art—and tying them to the **Qubic** blockchain. Users submit an asset with description, jurisdiction, value, and documents; the app creates a unique Qubic-backed identity for it and stores metadata. Authorized validators can approve assets step by step (e.g. notary then registry); once verified, an asset appears in the user’s portfolio and in the marketplace. The goal is to give each physical asset a digital twin with cryptographic proof of ownership on Qubic.
 
----
+**Qubic** is used because it offers a lean, efficient protocol for identity and transactions. The backend uses the official Qubic library to generate real 55-character seeds and derive 60-character public IDs that match the network. Asset data is signed so that ownership and verification are cryptographically bound to those identities. In production, a Qubic node can broadcast transactions and keep the registry aligned with the chain. So Qubic is used both for **who owns what** (identities and signatures) and for **persistent, auditable records** of registered and verified assets.
 
-## 🌐 Live Demo
-**Web App:** [http://3.89.217.59](http://3.89.217.59)
-**Qubic RPC Node:** [http://3.89.217.59:8000/v1/status](http://3.89.217.59:8000/v1/status)
+The stack is a **React + Vite** frontend (TailwindCSS, Voces font) and a **Node.js + Express** backend. The backend handles registration, file uploads, validation rules, and SQLite for asset metadata; it calls the Qubic library for identity creation and signing. The frontend provides a dashboard (portfolio and TVL), a registration flow with document and photo upload, a validator workstation for admins, and a marketplace of verified assets. Live status and “Qubic Network Active” are shown in the UI to reflect connection to the chain.
 
----
+Screenshots below show the main flows: the user portfolio and TVL, the registration-success screen with asset ID and QR code, the validator queue and workstation, and the asset-detail modal where validators approve steps and complete validation (which would mint the asset on Qubic Chain).
 
-## 💡 Overview
-Aegis Registry bridges the gap between physical assets and the Qubic blockchain. We provide the infrastructure for verified authorities to mint digital twins of real-world assets with cryptographic proof of ownership.
-
-**Key Differentials:**
-*   **Infrastructure:** We deployed our own **Qubic Core Node (C++)** on AWS to interact directly with the network.
-*   **Cryptography:** We integrated the **Official Qubic Library** to generate real Seeds/IDs and sign transactions (No mocks).
-*   **RWA Protocol:** Specialized data structures to handle off-chain metadata (Deeds, VINs) linked to on-chain identities.
+![My Asset Portfolio](Screenshot%202026-01-31%20231034.jpg)  
+![Registration Successful](Screenshot%202026-01-31%20231404.jpg)  
+![Validator Workstation](Screenshot%202026-01-31%20231820.jpg)  
+![Asset verification modal](Screenshot%202026-01-31%20231923.jpg)
 
 ---
 
-## 🏗️ Architecture
-
-### 1. The Core (Infrastructure)
-*   **AWS EC2 (t3.large):** Production environment hosting the entire stack.
-*   **Qubic Computor (Node):** Dockerized C++ official node synced with the Testnet Spectrum (1GB+ State).
-*   **RPC Interface:** Exposes port `8000` for direct transaction broadcasting.
-
-### 2. The Protocol (Backend)
-*   **Node.js & Express:** Orchestrates asset verification and signing.
-*   **Cryptographic Engine:**
-    *   Generates 55-char Seeds securely.
-    *   Derives 60-char Public IDs compatible with Qubic protocol.
-    *   Signs transactions using Schnorr/Ed25519 (Qubic standard).
-
-### 3. The Interface (Frontend)
-*   **React + Vite:** High-performance dashboard for Asset Management.
-*   **Asset Dashboard:** Real-time visualization of registered RWAs and their blockchain status.
-
----
-
-## 🛠️ Tech Stack
-
-| Component | Technology |
-|-----------|------------|
-| **Blockchain** | Qubic Core (C++), Docker, Spectrum |
-| **Backend** | Node.js, Express, `@qubic-lib/ts-library` |
-| **Frontend** | React, TailwindCSS, Lucide Icons |
-| **Database** | SQLite (Metadata Cache), MongoDB (Node State) |
-| **DevOps** | AWS, PM2, Docker Compose |
-
----
-
-## 🚀 Local Installation
+## Local setup
 
 ```bash
-# 1. Backend Setup
-cd backend
-npm install
-node seed_data.js  # Load demo assets
-npm run dev
-
-# 2. Frontend Setup
-cd frontend
-npm install
-npm run dev
+cd backend && npm install && node seed_data.js && npm run dev
+cd frontend && npm install && npm run dev
 ```
-
----
-
-*Built for Qubic Hackathon 2025*
