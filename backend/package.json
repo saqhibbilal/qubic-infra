@@ -1,0 +1,29 @@
+{
+  "name": "aegis-registry-backend",
+  "version": "1.0.0",
+  "description": "Backend para Aegis Registry - Qubic Hackathon",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@qubic-lib/qubic-ts-library": "^0.1.6",
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "joi": "^17.13.1",
+    "multer": "^2.0.2",
+    "web3": "^4.8.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0"
+  }
+}
